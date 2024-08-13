@@ -1,0 +1,4 @@
+  File "D:\author\RealFaults\bugs\054\buggy\script.py", line 31
+    model.add(Convolution2D(32, (3, 3), activation='relu'))
+        ^
+SyntaxError: invalid syntax

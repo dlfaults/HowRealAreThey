@@ -1,0 +1,14 @@
+/Library/Python/3.9/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+  warnings.warn(
+WARNING:tensorflow:From /Library/Python/3.9/site-packages/tensorflow/python/util/dispatch.py:1260: calling dropout (from tensorflow.python.ops.nn_ops) with keep_prob is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `rate` instead of `keep_prob`. Rate should be set to `rate = 1 - keep_prob`.
+2024-08-01 18:21:23.350728: I tensorflow/compiler/mlir/mlir_graph_optimization_pass.cc:382] MLIR V1 optimization pass is not enabled
+Traceback (most recent call last):
+  File "/Users/usi/Documents/RealBugsAnalysis/sfdata/runs/s35673874_context.py", line 63, in <module>
+    sess.run(train_step, feed_dict={x:images, y_:labels, keep_prob: 0.5})
+  File "/Library/Python/3.9/site-packages/tensorflow/python/client/session.py", line 972, in run
+    result = self._run(None, fetches, feed_dict, options_ptr,
+  File "/Library/Python/3.9/site-packages/tensorflow/python/client/session.py", line 1189, in _run
+    raise ValueError(
+ValueError: Cannot feed value of shape (10, 1, 32, 32, 3) for Tensor Placeholder:0, which has shape (None, 32, 32, 3)

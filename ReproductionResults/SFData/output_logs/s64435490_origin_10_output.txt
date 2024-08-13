@@ -1,0 +1,20 @@
+300
+Model: "sequential"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ flatten (Flatten)           (None, 300)               0         
+                                                                 
+ dense (Dense)               (None, 150)               45150     
+                                                                 
+ dense_1 (Dense)             (None, 150)               22650     
+                                                                 
+ dense_2 (Dense)             (None, 2)                 302       
+                                                                 
+=================================================================
+Total params: 68102 (266.02 KB)
+Trainable params: 68102 (266.02 KB)
+Non-trainable params: 0 (0.00 Byte)
+_________________________________________________________________
+Found 6 images belonging to 2 classes.
+Found 2 images belonging to 2 classes.

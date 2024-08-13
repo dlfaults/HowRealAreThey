@@ -1,0 +1,79 @@
+2024-07-12 15:27:24.948320: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library cudart64_110.dll
+2024-07-12 15:27:26.593207: I tensorflow/compiler/jit/xla_cpu_device.cc:41] Not creating XLA devices, tf_xla_enable_xla_devices not set
+2024-07-12 15:27:26.593755: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library nvcuda.dll
+2024-07-12 15:27:26.620456: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1720] Found device 0 with properties: 
+pciBusID: 0000:01:00.0 name: NVIDIA GeForce RTX 3070 computeCapability: 8.6
+coreClock: 1.725GHz coreCount: 46 deviceMemorySize: 8.00GiB deviceMemoryBandwidth: 417.29GiB/s
+2024-07-12 15:27:26.620870: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library cudart64_110.dll
+2024-07-12 15:27:26.626753: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library cublas64_11.dll
+2024-07-12 15:27:26.626973: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library cublasLt64_11.dll
+2024-07-12 15:27:26.630047: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library cufft64_10.dll
+2024-07-12 15:27:26.631357: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library curand64_10.dll
+2024-07-12 15:27:26.634118: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library cusolver64_10.dll
+2024-07-12 15:27:26.637039: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library cusparse64_11.dll
+2024-07-12 15:27:26.637655: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library cudnn64_8.dll
+2024-07-12 15:27:26.637915: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1862] Adding visible gpu devices: 0
+2024-07-12 15:27:26.638338: I tensorflow/core/platform/cpu_feature_guard.cc:142] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2024-07-12 15:27:26.639670: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1720] Found device 0 with properties: 
+pciBusID: 0000:01:00.0 name: NVIDIA GeForce RTX 3070 computeCapability: 8.6
+coreClock: 1.725GHz coreCount: 46 deviceMemorySize: 8.00GiB deviceMemoryBandwidth: 417.29GiB/s
+2024-07-12 15:27:26.640180: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library cudart64_110.dll
+2024-07-12 15:27:26.640374: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library cublas64_11.dll
+2024-07-12 15:27:26.640607: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library cublasLt64_11.dll
+2024-07-12 15:27:26.640906: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library cufft64_10.dll
+2024-07-12 15:27:26.641123: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library curand64_10.dll
+2024-07-12 15:27:26.641328: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library cusolver64_10.dll
+2024-07-12 15:27:26.641537: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library cusparse64_11.dll
+2024-07-12 15:27:26.641734: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library cudnn64_8.dll
+2024-07-12 15:27:26.641948: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1862] Adding visible gpu devices: 0
+2024-07-12 15:27:27.084694: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1261] Device interconnect StreamExecutor with strength 1 edge matrix:
+2024-07-12 15:27:27.084897: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1267]      0 
+2024-07-12 15:27:27.085005: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1280] 0:   N 
+2024-07-12 15:27:27.085223: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1406] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 6589 MB memory) -> physical GPU (device: 0, name: NVIDIA GeForce RTX 3070, pci bus id: 0000:01:00.0, compute capability: 8.6)
+2024-07-12 15:27:27.086245: I tensorflow/compiler/jit/xla_gpu_device.cc:99] Not creating XLA devices, tf_xla_enable_xla_devices not set
+Traceback (most recent call last):
+  File "D:\gianmarco\venvPipeline\lib\site-packages\tensorflow\python\framework\ops.py", line 1853, in _create_c_op
+    c_op = pywrap_tf_session.TF_FinishOperation(op_desc)
+tensorflow.python.framework.errors_impl.InvalidArgumentError: Negative dimension size caused by subtracting 3 from 1 for '{{node conv2d/Conv2D}} = Conv2D[T=DT_FLOAT, data_format="NHWC", dilations=[1, 1, 1, 1], explicit_paddings=[], padding="VALID", strides=[1, 1, 1, 1], use_cudnn_on_gpu=true](Placeholder, conv2d/Conv2D/ReadVariableOp)' with input shapes: [?,1,28,28], [3,3,28,32].
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\author\RealFaults\bugs\036\buggy\keras_cnn_example.py", line 36, in <module>
+    model.add(Conv2D(32, (3, 3), activation='relu', input_shape=(1,28,28)))
+  File "D:\gianmarco\venvPipeline\lib\site-packages\tensorflow\python\training\tracking\base.py", line 517, in _method_wrapper
+    result = method(self, *args, **kwargs)
+  File "D:\gianmarco\venvPipeline\lib\site-packages\tensorflow\python\keras\engine\sequential.py", line 208, in add
+    layer(x)
+  File "D:\gianmarco\venvPipeline\lib\site-packages\tensorflow\python\keras\engine\base_layer.py", line 951, in __call__
+    return self._functional_construction_call(inputs, args, kwargs,
+  File "D:\gianmarco\venvPipeline\lib\site-packages\tensorflow\python\keras\engine\base_layer.py", line 1090, in _functional_construction_call
+    outputs = self._keras_tensor_symbolic_call(
+  File "D:\gianmarco\venvPipeline\lib\site-packages\tensorflow\python\keras\engine\base_layer.py", line 822, in _keras_tensor_symbolic_call
+    return self._infer_output_signature(inputs, args, kwargs, input_masks)
+  File "D:\gianmarco\venvPipeline\lib\site-packages\tensorflow\python\keras\engine\base_layer.py", line 863, in _infer_output_signature
+    outputs = call_fn(inputs, *args, **kwargs)
+  File "D:\gianmarco\venvPipeline\lib\site-packages\tensorflow\python\keras\layers\convolutional.py", line 248, in call
+    outputs = self._convolution_op(inputs, self.kernel)
+  File "D:\gianmarco\venvPipeline\lib\site-packages\tensorflow\python\util\dispatch.py", line 201, in wrapper
+    return target(*args, **kwargs)
+  File "D:\gianmarco\venvPipeline\lib\site-packages\tensorflow\python\ops\nn_ops.py", line 1013, in convolution_v2
+    return convolution_internal(
+  File "D:\gianmarco\venvPipeline\lib\site-packages\tensorflow\python\ops\nn_ops.py", line 1143, in convolution_internal
+    return op(
+  File "D:\gianmarco\venvPipeline\lib\site-packages\tensorflow\python\ops\nn_ops.py", line 2597, in _conv2d_expanded_batch
+    return gen_nn_ops.conv2d(
+  File "D:\gianmarco\venvPipeline\lib\site-packages\tensorflow\python\ops\gen_nn_ops.py", line 968, in conv2d
+    _, _, _op, _outputs = _op_def_library._apply_op_helper(
+  File "D:\gianmarco\venvPipeline\lib\site-packages\tensorflow\python\framework\op_def_library.py", line 748, in _apply_op_helper
+    op = g._create_op_internal(op_type_name, inputs, dtypes=None,
+  File "D:\gianmarco\venvPipeline\lib\site-packages\tensorflow\python\framework\func_graph.py", line 590, in _create_op_internal
+    return super(FuncGraph, self)._create_op_internal(  # pylint: disable=protected-access
+  File "D:\gianmarco\venvPipeline\lib\site-packages\tensorflow\python\framework\ops.py", line 3528, in _create_op_internal
+    ret = Operation(
+  File "D:\gianmarco\venvPipeline\lib\site-packages\tensorflow\python\framework\ops.py", line 2015, in __init__
+    self._c_op = _create_c_op(self._graph, node_def, inputs,
+  File "D:\gianmarco\venvPipeline\lib\site-packages\tensorflow\python\framework\ops.py", line 1856, in _create_c_op
+    raise ValueError(str(e))
+ValueError: Negative dimension size caused by subtracting 3 from 1 for '{{node conv2d/Conv2D}} = Conv2D[T=DT_FLOAT, data_format="NHWC", dilations=[1, 1, 1, 1], explicit_paddings=[], padding="VALID", strides=[1, 1, 1, 1], use_cudnn_on_gpu=true](Placeholder, conv2d/Conv2D/ReadVariableOp)' with input shapes: [?,1,28,28], [3,3,28,32].

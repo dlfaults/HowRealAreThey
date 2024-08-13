@@ -1,0 +1,14 @@
+Using TensorFlow backend.
+/Users/author/Documents/Projects/RealFaults/RFvenv/lib/python3.8/site-packages/keras/datasets/imdb.py:49: UserWarning: The `nb_words` argument in `load_data` has been renamed `num_words`.
+  warnings.warn('The `nb_words` argument in `load_data` '
+/Users/author/Documents/Projects/RealFaults/RFvenv/lib/python3.8/site-packages/keras/datasets/imdb.py:101: VisibleDeprecationWarning: Creating an ndarray from ragged nested sequences (which is a list-or-tuple of lists-or-tuples-or ndarrays with different lengths or shapes) is deprecated. If you meant to do this, you must specify 'dtype=object' when creating the ndarray
+  x_train, y_train = np.array(xs[:idx]), np.array(labels[:idx])
+/Users/author/Documents/Projects/RealFaults/RFvenv/lib/python3.8/site-packages/keras/datasets/imdb.py:102: VisibleDeprecationWarning: Creating an ndarray from ragged nested sequences (which is a list-or-tuple of lists-or-tuples-or ndarrays with different lengths or shapes) is deprecated. If you meant to do this, you must specify 'dtype=object' when creating the ndarray
+  x_test, y_test = np.array(xs[idx:]), np.array(labels[idx:])
+2024-07-02 22:43:30.026971: I tensorflow/core/platform/cpu_feature_guard.cc:143] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+2024-07-02 22:43:30.040088: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x7fa414701990 initialized for platform Host (this does not guarantee that XLA will be used). Devices:
+2024-07-02 22:43:30.040104: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Host, Default Version
+/Users/author/Documents/Projects/RealFaults/bugs/035/fixed/imdb_fasttext.py:115: UserWarning: The `nb_epoch` argument in `fit` has been renamed `epochs`.
+  model.fit(X_train, y_train,
+/Users/author/Documents/Projects/RealFaults/RFvenv/lib/python3.8/site-packages/tensorflow/python/framework/indexed_slices.py:433: UserWarning: Converting sparse IndexedSlices to a dense Tensor of unknown shape. This may consume a large amount of memory.
+  warnings.warn(

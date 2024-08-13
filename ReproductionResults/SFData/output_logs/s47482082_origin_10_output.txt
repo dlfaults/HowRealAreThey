@@ -1,0 +1,4 @@
+def layers
+def leraning model
+init layer value
+train num 1

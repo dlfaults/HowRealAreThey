@@ -1,0 +1,1 @@
+SparseTensorValue(indices=array([[0, 0]]), values=array([2], dtype=int32), dense_shape=array([1, 1]))

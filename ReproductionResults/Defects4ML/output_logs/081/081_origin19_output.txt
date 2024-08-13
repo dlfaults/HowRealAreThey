@@ -1,0 +1,4 @@
+60000
+X_train shape: (60000, 1, 28, 28)
+60000 train samples
+10000 test samples

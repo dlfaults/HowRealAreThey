@@ -1,0 +1,4 @@
+Using TensorFlow backend.
+2024-07-02 17:50:09.337573: I tensorflow/core/platform/cpu_feature_guard.cc:143] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+2024-07-02 17:50:09.349216: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x7f8c06a3f8b0 initialized for platform Host (this does not guarantee that XLA will be used). Devices:
+2024-07-02 17:50:09.349232: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Host, Default Version

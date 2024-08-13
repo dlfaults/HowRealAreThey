@@ -1,0 +1,30 @@
+Model: "sequential"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ dense (Dense)               (None, 5)                 25005     
+                                                                 
+ dense_1 (Dense)             (None, 1)                 6         
+                                                                 
+=================================================================
+Total params: 25011 (97.70 KB)
+Trainable params: 25011 (97.70 KB)
+Non-trainable params: 0 (0.00 Byte)
+_________________________________________________________________
+(None, 1)
+{'name': 'sequential', 'layers': [{'module': 'keras.layers', 'class_name': 'InputLayer', 'config': {'batch_input_shape': (None, 5000), 'dtype': 'float32', 'sparse': False, 'ragged': False, 'name': 'dense_input'}, 'registered_name': None}, {'module': 'keras.layers', 'class_name': 'Dense', 'config': {'name': 'dense', 'trainable': True, 'dtype': 'float32', 'batch_input_shape': (None, 5000), 'units': 5, 'activation': 'relu', 'use_bias': True, 'kernel_initializer': {'module': 'keras.initializers', 'class_name': 'GlorotUniform', 'config': {'seed': None}, 'registered_name': None}, 'bias_initializer': {'module': 'keras.initializers', 'class_name': 'Zeros', 'config': {}, 'registered_name': None}, 'kernel_regularizer': None, 'bias_regularizer': None, 'activity_regularizer': None, 'kernel_constraint': None, 'bias_constraint': None}, 'registered_name': None, 'build_config': {'input_shape': (None, 5000)}}, {'module': 'keras.layers', 'class_name': 'Dense', 'config': {'name': 'dense_1', 'trainable': True, 'dtype': 'float32', 'units': 1, 'activation': 'sigmoid', 'use_bias': True, 'kernel_initializer': {'module': 'keras.initializers', 'class_name': 'GlorotUniform', 'config': {'seed': None}, 'registered_name': None}, 'bias_initializer': {'module': 'keras.initializers', 'class_name': 'Zeros', 'config': {}, 'registered_name': None}, 'kernel_regularizer': None, 'bias_regularizer': None, 'activity_regularizer': None, 'kernel_constraint': None, 'bias_constraint': None}, 'registered_name': None, 'build_config': {'input_shape': (None, 5)}}]}
+[array([[-0.02394305,  0.0254284 , -0.01329906,  0.00602574,  0.02563234],
+       [ 0.01956994, -0.02451492,  0.00662226,  0.02639919,  0.02623582],
+       [ 0.03208221, -0.029727  ,  0.00741965, -0.03172096, -0.02565443],
+       ...,
+       [ 0.0157738 ,  0.01753961, -0.01495084, -0.03306801,  0.02322207],
+       [ 0.01777636, -0.02867872, -0.02400462, -0.00578262, -0.01985644],
+       [ 0.03006481,  0.01230829,  0.02463584, -0.00426328, -0.01982793]],
+      dtype=float32), array([0., 0., 0., 0., 0.], dtype=float32), array([[ 0.6235039 ],
+       [-0.9076445 ],
+       [-0.07343292],
+       [-0.50144315],
+       [-0.29038692]], dtype=float32), array([0.], dtype=float32)]
+
+ 1/10 [==>...........................] - ETA: 2s - loss: 0.6346 - accuracy: 1.0000
+10/10 [==============================] - 0s 2ms/step - loss: 1.1171 - accuracy: 0.7000

@@ -1,0 +1,2 @@
+dyld[71579]: Assertion failed: (this->magic == kMagic), function matchesPath, file Loader.cpp, line 154.
+

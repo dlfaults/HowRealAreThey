@@ -1,0 +1,46 @@
+/Library/Python/3.9/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+  warnings.warn(
+WARNING:absl:At this time, the v2.11+ optimizer `tf.keras.optimizers.Adam` runs slowly on M1/M2 Macs, please use the legacy Keras optimizer instead, located at `tf.keras.optimizers.legacy.Adam`.
+WARNING:absl:`lr` is deprecated in Keras optimizer, please use `learning_rate` or use the legacy optimizer, e.g.,tf.keras.optimizers.legacy.Adam.
+Traceback (most recent call last):
+  File "/Users/usi/Documents/RealBugsAnalysis/deepfd/bugs/56380303/repair.py", line 47, in <module>
+    model.fit(x_train, y_train, epochs=10, batch_size=50)
+  File "/Library/Python/3.9/site-packages/keras/src/utils/traceback_utils.py", line 70, in error_handler
+    raise e.with_traceback(filtered_tb) from None
+  File "/Library/Python/3.9/site-packages/tensorflow/python/eager/execute.py", line 60, in quick_execute
+    tensors = pywrap_tfe.TFE_Py_Execute(ctx._handle, device_name, op_name,
+tensorflow.python.framework.errors_impl.InvalidArgumentError: Graph execution error:
+
+Detected at node Adam/truediv_9 defined at (most recent call last):
+  File "/Users/usi/Documents/RealBugsAnalysis/deepfd/bugs/56380303/repair.py", line 47, in <module>
+
+  File "/Library/Python/3.9/site-packages/keras/src/utils/traceback_utils.py", line 65, in error_handler
+
+  File "/Library/Python/3.9/site-packages/keras/src/engine/training.py", line 1783, in fit
+
+  File "/Library/Python/3.9/site-packages/keras/src/engine/training.py", line 1377, in train_function
+
+  File "/Library/Python/3.9/site-packages/keras/src/engine/training.py", line 1360, in step_function
+
+  File "/Library/Python/3.9/site-packages/keras/src/engine/training.py", line 1349, in run_step
+
+  File "/Library/Python/3.9/site-packages/keras/src/engine/training.py", line 1130, in train_step
+
+  File "/Library/Python/3.9/site-packages/keras/src/optimizers/optimizer.py", line 544, in minimize
+
+  File "/Library/Python/3.9/site-packages/keras/src/optimizers/optimizer.py", line 1223, in apply_gradients
+
+  File "/Library/Python/3.9/site-packages/keras/src/optimizers/optimizer.py", line 652, in apply_gradients
+
+  File "/Library/Python/3.9/site-packages/keras/src/optimizers/optimizer.py", line 1253, in _internal_apply_gradients
+
+  File "/Library/Python/3.9/site-packages/keras/src/optimizers/optimizer.py", line 1345, in _distributed_apply_gradients_fn
+
+  File "/Library/Python/3.9/site-packages/keras/src/optimizers/optimizer.py", line 1342, in apply_grad_to_update_var
+
+  File "/Library/Python/3.9/site-packages/keras/src/optimizers/optimizer.py", line 241, in _update_step
+
+  File "/Library/Python/3.9/site-packages/keras/src/optimizers/adam.py", line 204, in update_step
+
+Incompatible shapes: [0] vs. [20,20]
+	 [[{{node Adam/truediv_9}}]] [Op:__inference_train_function_1026]

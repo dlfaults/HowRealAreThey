@@ -1,0 +1,6 @@
+/Library/Python/3.9/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+  warnings.warn(
+Traceback (most recent call last):
+  File "/Users/usi/Documents/RealBugsAnalysis/sfdata/runs/s54658635_context.py", line 3, in <module>
+    batch_crop = tf.random_crop(images, size=(20, 20))
+AttributeError: module 'tensorflow' has no attribute 'random_crop'

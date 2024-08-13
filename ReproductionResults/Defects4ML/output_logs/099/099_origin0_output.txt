@@ -1,0 +1,2 @@
+Accuracy: 30.67% (9.52%)
+Info:{"accuracy": "30.67", "loss": "9.521905", "train_size": "150", "test_size": "150"}

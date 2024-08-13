@@ -1,0 +1,16 @@
+/Library/Python/3.9/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+  warnings.warn(
+/Users/usi/Documents/RealBugsAnalysis/sfdata/runs/s56783962_context.py:7: UserWarning: `tf.layers.dense` is deprecated and will be removed in a future version. Please use `tf.keras.layers.Dense` instead.
+  hidden1 = tf.layers.dense(X, 150)
+/Users/usi/Documents/RealBugsAnalysis/sfdata/runs/s56783962_context.py:8: UserWarning: `tf.layers.dense` is deprecated and will be removed in a future version. Please use `tf.keras.layers.Dense` instead.
+  hidden2 = tf.layers.dense(hidden1, 50)
+/Users/usi/Documents/RealBugsAnalysis/sfdata/runs/s56783962_context.py:9: UserWarning: `tf.layers.dense` is deprecated and will be removed in a future version. Please use `tf.keras.layers.Dense` instead.
+  logits = tf.layers.dense(hidden2, 1)
+Traceback (most recent call last):
+  File "/Users/usi/Documents/RealBugsAnalysis/sfdata/runs/s56783962_context.py", line 12, in <module>
+    xentropy= tf.nn.sparse_softmax_cross_entropy_with_logits(labels=y,
+  File "/Library/Python/3.9/site-packages/tensorflow/python/util/traceback_utils.py", line 153, in error_handler
+    raise e.with_traceback(filtered_tb) from None
+  File "/Library/Python/3.9/site-packages/tensorflow/python/ops/nn_ops.py", line 4363, in sparse_softmax_cross_entropy_with_logits
+    raise ValueError(
+ValueError: `labels.shape` must equal `logits.shape` except for the last dimension. Received: labels.shape=(1, 1) and logits.shape=(1, 5, 1)

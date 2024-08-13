@@ -1,0 +1,11 @@
+/Library/Python/3.9/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+  warnings.warn(
+2024-08-01 19:16:10.750280: I tensorflow/core/common_runtime/direct_session.cc:380] Device mapping: no known devices.
+2024-08-01 19:16:10.750536: I tensorflow/compiler/mlir/mlir_graph_optimization_pass.cc:382] MLIR V1 optimization pass is not enabled
+2024-08-01 19:16:10.750991: I tensorflow/core/common_runtime/placer.cc:125] ExpandDims: (ExpandDims): /job:localhost/replica:0/task:0/device:CPU:0
+2024-08-01 19:16:10.750996: I tensorflow/core/common_runtime/placer.cc:125] ExpandDims_1: (ExpandDims): /job:localhost/replica:0/task:0/device:CPU:0
+2024-08-01 19:16:10.750998: I tensorflow/core/common_runtime/placer.cc:125] MatMul: (MatMul): /job:localhost/replica:0/task:0/device:CPU:0
+2024-08-01 19:16:10.751002: I tensorflow/core/common_runtime/placer.cc:125] a: (Const): /job:localhost/replica:0/task:0/device:CPU:0
+2024-08-01 19:16:10.751005: I tensorflow/core/common_runtime/placer.cc:125] b: (Const): /job:localhost/replica:0/task:0/device:CPU:0
+2024-08-01 19:16:10.751008: I tensorflow/core/common_runtime/placer.cc:125] ExpandDims/dim: (Const): /job:localhost/replica:0/task:0/device:CPU:0
+2024-08-01 19:16:10.751010: I tensorflow/core/common_runtime/placer.cc:125] ExpandDims_1/dim: (Const): /job:localhost/replica:0/task:0/device:CPU:0

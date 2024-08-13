@@ -1,0 +1,10 @@
+/Library/Python/3.9/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+  warnings.warn(
+/Users/usi/Documents/RealBugsAnalysis/sfdata/runs/s56783962_ground_truth.py:7: UserWarning: `tf.layers.flatten` is deprecated and will be removed in a future version. Please use `tf.keras.layers.Flatten` instead.
+  flattened = tf.layers.flatten(X) # shape (1,35)
+/Users/usi/Documents/RealBugsAnalysis/sfdata/runs/s56783962_ground_truth.py:8: UserWarning: `tf.layers.dense` is deprecated and will be removed in a future version. Please use `tf.keras.layers.Dense` instead.
+  hidden1 = tf.layers.dense(flattened, 150) # shape (1,150)
+/Users/usi/Documents/RealBugsAnalysis/sfdata/runs/s56783962_ground_truth.py:9: UserWarning: `tf.layers.dense` is deprecated and will be removed in a future version. Please use `tf.keras.layers.Dense` instead.
+  hidden2 = tf.layers.dense(hidden1, 50) # shape (1,50)
+/Users/usi/Documents/RealBugsAnalysis/sfdata/runs/s56783962_ground_truth.py:10: UserWarning: `tf.layers.dense` is deprecated and will be removed in a future version. Please use `tf.keras.layers.Dense` instead.
+  logits = tf.layers.dense(hidden2, 1) # shape (1,1)

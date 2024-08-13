@@ -1,0 +1,10 @@
+/Library/Python/3.9/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+  warnings.warn(
+Traceback (most recent call last):
+  File "/Users/usi/Documents/RealBugsAnalysis/sfdata/runs/s47297536_context.py", line 9, in <module>
+    enqueue_op = q.enqueue_many(a)
+  File "/Library/Python/3.9/site-packages/tensorflow/python/ops/data_flow_ops.py", line 396, in enqueue_many
+    val.get_shape()[1:].assert_is_compatible_with(shape)
+  File "/Library/Python/3.9/site-packages/tensorflow/python/framework/tensor_shape.py", line 1361, in assert_is_compatible_with
+    raise ValueError("Shapes %s and %s are incompatible" % (self, other))
+ValueError: Shapes (1024, 3) and (1024, 1024, 3) are incompatible

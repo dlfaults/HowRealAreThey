@@ -1,0 +1,1 @@
+10/10 - 0s - loss: 0.6933 - accuracy: 0.4800 - 150ms/epoch - 15ms/step

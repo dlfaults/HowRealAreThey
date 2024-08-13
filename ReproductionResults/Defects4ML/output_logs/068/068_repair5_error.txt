@@ -1,0 +1,6 @@
+/Users/author/Documents/Projects/RealFaults/RFvenv/lib/python3.8/site-packages/keras/utils/np_utils.py:6: UserWarning: The NumPy module was reloaded (imported a second time). This can in some cases result in small but subtle issues and is discouraged.
+  import numpy as np
+Using TensorFlow backend.
+2024-07-02 13:14:48.042262: I tensorflow/core/platform/cpu_feature_guard.cc:143] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+2024-07-02 13:14:48.053194: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x7fbb4a699740 initialized for platform Host (this does not guarantee that XLA will be used). Devices:
+2024-07-02 13:14:48.053211: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Host, Default Version

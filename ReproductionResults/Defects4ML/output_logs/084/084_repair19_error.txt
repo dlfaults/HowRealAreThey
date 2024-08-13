@@ -1,0 +1,12 @@
+Using TensorFlow backend.
+/Users/author/Documents/Projects/RealFaults/bugs/084/fixed/script.py:13: UserWarning: Update your `Dense` call to the Keras 2 API: `Dense(2, input_dim=2, activation="sigmoid", kernel_initializer="uniform")`
+  model.add(Dense(2, input_dim=2, init='uniform', activation='sigmoid'))
+2024-07-03 00:16:49.129693: I tensorflow/core/platform/cpu_feature_guard.cc:143] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+2024-07-03 00:16:49.140082: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x7ffe9b785bb0 initialized for platform Host (this does not guarantee that XLA will be used). Devices:
+2024-07-03 00:16:49.140111: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Host, Default Version
+/Users/author/Documents/Projects/RealFaults/bugs/084/fixed/script.py:14: UserWarning: Update your `Dense` call to the Keras 2 API: `Dense(3, activation="sigmoid", kernel_initializer="uniform")`
+  model.add(Dense(3, init='uniform', activation='sigmoid'))
+/Users/author/Documents/Projects/RealFaults/bugs/084/fixed/script.py:16: UserWarning: Update your `Dense` call to the Keras 2 API: `Dense(1, kernel_initializer="uniform")`
+  model.add(Dense(1, init='uniform'))
+/Users/author/Documents/Projects/RealFaults/bugs/084/fixed/script.py:20: UserWarning: The `nb_epoch` argument in `fit` has been renamed `epochs`.
+  model.fit(X, y, nb_epoch=20)

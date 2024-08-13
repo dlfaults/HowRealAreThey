@@ -1,0 +1,38 @@
+D:\author\RealFaults\RFenv\lib\site-packages\tensorflow\python\framework\dtypes.py:519: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint8 = np.dtype([("qint8", np.int8, 1)])
+D:\author\RealFaults\RFenv\lib\site-packages\tensorflow\python\framework\dtypes.py:520: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_quint8 = np.dtype([("quint8", np.uint8, 1)])
+D:\author\RealFaults\RFenv\lib\site-packages\tensorflow\python\framework\dtypes.py:521: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint16 = np.dtype([("qint16", np.int16, 1)])
+D:\author\RealFaults\RFenv\lib\site-packages\tensorflow\python\framework\dtypes.py:522: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_quint16 = np.dtype([("quint16", np.uint16, 1)])
+D:\author\RealFaults\RFenv\lib\site-packages\tensorflow\python\framework\dtypes.py:523: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint32 = np.dtype([("qint32", np.int32, 1)])
+D:\author\RealFaults\RFenv\lib\site-packages\tensorflow\python\framework\dtypes.py:528: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  np_resource = np.dtype([("resource", np.ubyte, 1)])
+Traceback (most recent call last):
+  File "D:\author\RealFaults\bugs\043\buggy\cifar10\cifar10_multi_gpu_train.py", line 270, in <module>
+    tf.app.run()
+  File "D:\author\RealFaults\RFenv\lib\site-packages\tensorflow\python\platform\app.py", line 126, in run
+    _sys.exit(main(argv))
+  File "D:\author\RealFaults\bugs\043\buggy\cifar10\cifar10_multi_gpu_train.py", line 266, in main
+    train()
+  File "D:\author\RealFaults\bugs\043\buggy\cifar10\cifar10_multi_gpu_train.py", line 207, in train
+    variables_averages_op = variable_averages.apply(tf.trainable_variables())
+  File "D:\author\RealFaults\RFenv\lib\site-packages\tensorflow\python\training\moving_averages.py", line 398, in apply
+    colocate_with_primary=True)
+  File "D:\author\RealFaults\RFenv\lib\site-packages\tensorflow\python\training\slot_creator.py", line 117, in create_slot
+    return _create_slot_var(primary, val, "", validate_shape, None, None)
+  File "D:\author\RealFaults\RFenv\lib\site-packages\tensorflow\python\training\slot_creator.py", line 65, in _create_slot_var
+    validate_shape=validate_shape)
+  File "D:\author\RealFaults\RFenv\lib\site-packages\tensorflow\python\ops\variable_scope.py", line 1317, in get_variable
+    constraint=constraint)
+  File "D:\author\RealFaults\RFenv\lib\site-packages\tensorflow\python\ops\variable_scope.py", line 1079, in get_variable
+    constraint=constraint)
+  File "D:\author\RealFaults\RFenv\lib\site-packages\tensorflow\python\ops\variable_scope.py", line 425, in get_variable
+    constraint=constraint)
+  File "D:\author\RealFaults\RFenv\lib\site-packages\tensorflow\python\ops\variable_scope.py", line 394, in _true_getter
+    use_resource=use_resource, constraint=constraint)
+  File "D:\author\RealFaults\RFenv\lib\site-packages\tensorflow\python\ops\variable_scope.py", line 751, in _get_single_variable
+    "reuse=tf.AUTO_REUSE in VarScope?" % name)
+ValueError: Variable conv1/weights/ExponentialMovingAverage/ does not exist, or was not created with tf.get_variable(). Did you mean to set reuse=tf.AUTO_REUSE in VarScope?

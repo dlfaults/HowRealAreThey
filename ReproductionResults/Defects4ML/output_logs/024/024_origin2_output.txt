@@ -1,0 +1,42 @@
+left_eye_center_x            7039
+left_eye_center_y            7039
+right_eye_center_x           7036
+right_eye_center_y           7036
+left_eye_inner_corner_x      2271
+left_eye_inner_corner_y      2271
+left_eye_outer_corner_x      2267
+left_eye_outer_corner_y      2267
+right_eye_inner_corner_x     2268
+right_eye_inner_corner_y     2268
+right_eye_outer_corner_x     2268
+right_eye_outer_corner_y     2268
+left_eyebrow_inner_end_x     2270
+left_eyebrow_inner_end_y     2270
+left_eyebrow_outer_end_x     2225
+left_eyebrow_outer_end_y     2225
+right_eyebrow_inner_end_x    2270
+right_eyebrow_inner_end_y    2270
+right_eyebrow_outer_end_x    2236
+right_eyebrow_outer_end_y    2236
+nose_tip_x                   7049
+nose_tip_y                   7049
+mouth_left_corner_x          2269
+mouth_left_corner_y          2269
+mouth_right_corner_x         2270
+mouth_right_corner_y         2270
+mouth_center_top_lip_x       2275
+mouth_center_top_lip_y       2275
+mouth_center_bottom_lip_x    7016
+mouth_center_bottom_lip_y    7016
+Image                        7049
+dtype: int64
+X.shape == (2140, 9216); X.min == 0.000; X.max == 1.000
+y.shape == (2140, 30); y.min == -0.920; y.max == 0.996
+
+  32/2140 [..............................] - ETA: 0s
+2140/2140 [==============================] - 0s 27us/step
+
+
+Test loss: 0.20805217949586494
+Info:{"accuracy": "0.21", "loss": "0.208052", "train_size": "2140", "test_size": "2140"}
+0.20805217949586494

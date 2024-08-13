@@ -1,0 +1,26 @@
+Extracting MNIST_data\train-images-idx3-ubyte.gz
+Extracting MNIST_data\train-labels-idx1-ubyte.gz
+Extracting MNIST_data\t10k-images-idx3-ubyte.gz
+Extracting MNIST_data\t10k-labels-idx1-ubyte.gz
+Epoch: 0001 cost= 1147.760902415
+Epoch: 0002 cost= 670.531271165
+Epoch: 0003 cost= 603.422899716
+Epoch: 0004 cost= 575.135846591
+Epoch: 0005 cost= 559.008270668
+Epoch: 0006 cost= 548.121617401
+Epoch: 0007 cost= 537.795398082
+Epoch: 0008 cost= 530.991102770
+Epoch: 0009 cost= 526.537282173
+Epoch: 0010 cost= 522.422273224
+Epoch: 0011 cost= 516.592482244
+Epoch: 0012 cost= 510.940334730
+Epoch: 0013 cost= 507.204015909
+Epoch: 0014 cost= 503.937783381
+Epoch: 0015 cost= 499.487397940
+Epoch: 0016 cost= 495.733628764
+Epoch: 0017 cost= 494.491949219
+Epoch: 0018 cost= 491.505325071
+Epoch: 0019 cost= 491.501109872
+Epoch: 0020 cost= 488.303202983
+Total cost: 19767.375
+Info:{"accuracy": "19767.38", "loss": "19767.375000", "train_size": "55000", "test_size": "10000"}

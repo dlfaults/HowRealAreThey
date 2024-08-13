@@ -1,0 +1,63 @@
+2024-07-03 04:19:31.688297: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library cudart64_110.dll
+2024-07-03 04:19:42.221838: I tensorflow/compiler/jit/xla_cpu_device.cc:41] Not creating XLA devices, tf_xla_enable_xla_devices not set
+2024-07-03 04:19:42.222671: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library nvcuda.dll
+2024-07-03 04:19:42.242247: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1720] Found device 0 with properties: 
+pciBusID: 0000:01:00.0 name: NVIDIA GeForce RTX 3070 computeCapability: 8.6
+coreClock: 1.725GHz coreCount: 46 deviceMemorySize: 8.00GiB deviceMemoryBandwidth: 417.29GiB/s
+2024-07-03 04:19:42.242649: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library cudart64_110.dll
+2024-07-03 04:19:42.250298: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library cublas64_11.dll
+2024-07-03 04:19:42.250637: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library cublasLt64_11.dll
+2024-07-03 04:19:42.253836: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library cufft64_10.dll
+2024-07-03 04:19:42.255199: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library curand64_10.dll
+2024-07-03 04:19:42.258000: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library cusolver64_10.dll
+2024-07-03 04:19:42.260883: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library cusparse64_11.dll
+2024-07-03 04:19:42.261531: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library cudnn64_8.dll
+2024-07-03 04:19:42.261754: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1862] Adding visible gpu devices: 0
+2024-07-03 04:19:42.262174: I tensorflow/core/platform/cpu_feature_guard.cc:142] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2024-07-03 04:19:42.263363: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1720] Found device 0 with properties: 
+pciBusID: 0000:01:00.0 name: NVIDIA GeForce RTX 3070 computeCapability: 8.6
+coreClock: 1.725GHz coreCount: 46 deviceMemorySize: 8.00GiB deviceMemoryBandwidth: 417.29GiB/s
+2024-07-03 04:19:42.263850: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library cudart64_110.dll
+2024-07-03 04:19:42.264087: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library cublas64_11.dll
+2024-07-03 04:19:42.264335: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library cublasLt64_11.dll
+2024-07-03 04:19:42.264546: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library cufft64_10.dll
+2024-07-03 04:19:42.264749: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library curand64_10.dll
+2024-07-03 04:19:42.265006: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library cusolver64_10.dll
+2024-07-03 04:19:42.265278: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library cusparse64_11.dll
+2024-07-03 04:19:42.265525: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library cudnn64_8.dll
+2024-07-03 04:19:42.265761: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1862] Adding visible gpu devices: 0
+2024-07-03 04:19:42.716207: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1261] Device interconnect StreamExecutor with strength 1 edge matrix:
+2024-07-03 04:19:42.716411: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1267]      0 
+2024-07-03 04:19:42.716520: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1280] 0:   N 
+2024-07-03 04:19:42.716725: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1406] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 6589 MB memory) -> physical GPU (device: 0, name: NVIDIA GeForce RTX 3070, pci bus id: 0000:01:00.0, compute capability: 8.6)
+2024-07-03 04:19:42.717680: I tensorflow/compiler/jit/xla_gpu_device.cc:99] Not creating XLA devices, tf_xla_enable_xla_devices not set
+2024-07-03 04:19:43.019076: I tensorflow/compiler/mlir/mlir_graph_optimization_pass.cc:116] None of the MLIR optimization passes are enabled (registered 2)
+2024-07-03 04:19:43.351022: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library cublas64_11.dll
+2024-07-03 04:19:43.971963: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library cublasLt64_11.dll
+2024-07-03 04:19:43.976927: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library cudnn64_8.dll
+2024-07-03 04:19:45.172500: I tensorflow/core/platform/windows/subprocess.cc:308] SubProcess ended with return code: 0
+
+2024-07-03 04:19:45.206601: I tensorflow/core/platform/windows/subprocess.cc:308] SubProcess ended with return code: 0
+
+2024-07-03 04:19:45.249111: I tensorflow/stream_executor/cuda/cuda_blas.cc:1838] TensorFloat-32 will be used for the matrix multiplication. This will only be logged once.
+WARNING:tensorflow:Can save best model only with val_acc available, skipping.
+WARNING:tensorflow:Can save best model only with val_acc available, skipping.
+WARNING:tensorflow:Can save best model only with val_acc available, skipping.
+WARNING:tensorflow:Can save best model only with val_acc available, skipping.
+WARNING:tensorflow:Can save best model only with val_acc available, skipping.
+WARNING:tensorflow:Can save best model only with val_acc available, skipping.
+WARNING:tensorflow:Can save best model only with val_acc available, skipping.
+WARNING:tensorflow:Can save best model only with val_acc available, skipping.
+WARNING:tensorflow:Can save best model only with val_acc available, skipping.
+WARNING:tensorflow:Can save best model only with val_acc available, skipping.
+WARNING:tensorflow:Can save best model only with val_acc available, skipping.
+WARNING:tensorflow:Can save best model only with val_acc available, skipping.
+WARNING:tensorflow:Can save best model only with val_acc available, skipping.
+WARNING:tensorflow:Can save best model only with val_acc available, skipping.
+WARNING:tensorflow:Can save best model only with val_acc available, skipping.
+WARNING:tensorflow:Can save best model only with val_acc available, skipping.
+WARNING:tensorflow:Can save best model only with val_acc available, skipping.
+WARNING:tensorflow:Can save best model only with val_acc available, skipping.
+WARNING:tensorflow:Can save best model only with val_acc available, skipping.
+WARNING:tensorflow:Can save best model only with val_acc available, skipping.

@@ -1,0 +1,10 @@
+/Library/Python/3.9/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+  warnings.warn(
+Traceback (most recent call last):
+  File "/Users/usi/Documents/RealBugsAnalysis/sfdata/runs/s46918759_context.py", line 8, in <module>
+    cond_assignment = tf.assign(embeddings, tf.where(comparison, embeddings/norm_embed, embeddings))
+  File "/Library/Python/3.9/site-packages/tensorflow/python/util/traceback_utils.py", line 153, in error_handler
+    raise e.with_traceback(filtered_tb) from None
+  File "/Library/Python/3.9/site-packages/tensorflow/python/framework/ops.py", line 1021, in _create_c_op
+    raise ValueError(e.message)
+ValueError: Dimension 1 in both shapes must be equal, but are 100 and 1. Shapes are [100,100] and [100,1]. for '{{node Select}} = Select[T=DT_FLOAT](Greater, truediv, Select/ReadVariableOp)' with input shapes: [100], [100,100], [100,1].

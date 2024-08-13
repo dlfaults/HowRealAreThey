@@ -1,0 +1,1 @@
+1/1 - 0s - loss: 0.8796 - 176ms/epoch - 176ms/step

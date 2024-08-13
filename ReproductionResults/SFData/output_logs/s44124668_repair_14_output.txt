@@ -1,0 +1,2 @@
+step 0, training accuracy 0.04
+test accuracy 0.13

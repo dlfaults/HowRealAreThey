@@ -1,0 +1,13 @@
+/Library/Python/3.9/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+  warnings.warn(
+2024-08-01 19:45:32.671975: I tensorflow/compiler/mlir/mlir_graph_optimization_pass.cc:382] MLIR V1 optimization pass is not enabled
+Traceback (most recent call last):
+  File "/Users/usi/Documents/RealBugsAnalysis/sfdata/runs/s40430186_context.py", line 24, in <module>
+    main()
+  File "/Users/usi/Documents/RealBugsAnalysis/sfdata/runs/s40430186_context.py", line 20, in main
+    my_classification = sess.run(tf.argmax(y_, 1), feed_dict={x_: image, y_:y})
+  File "/Library/Python/3.9/site-packages/tensorflow/python/client/session.py", line 972, in run
+    result = self._run(None, fetches, feed_dict, options_ptr,
+  File "/Library/Python/3.9/site-packages/tensorflow/python/client/session.py", line 1189, in _run
+    raise ValueError(
+ValueError: Cannot feed value of shape (64, 64, 3) for Tensor Placeholder:0, which has shape (None, 64, 64, 3)

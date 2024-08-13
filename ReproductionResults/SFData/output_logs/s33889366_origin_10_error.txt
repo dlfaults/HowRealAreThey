@@ -1,0 +1,10 @@
+/Library/Python/3.9/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+  warnings.warn(
+Traceback (most recent call last):
+  File "/Users/usi/Documents/RealBugsAnalysis/sfdata/runs/s33889366_context.py", line 50, in <module>
+    h_fc1 = tf.nn.relu(tf.matmul(h_pool2_flat, W_fc1) + b_fc1)
+  File "/Library/Python/3.9/site-packages/tensorflow/python/util/traceback_utils.py", line 153, in error_handler
+    raise e.with_traceback(filtered_tb) from None
+  File "/Library/Python/3.9/site-packages/tensorflow/python/framework/ops.py", line 1021, in _create_c_op
+    raise ValueError(e.message)
+ValueError: Dimensions must be equal, but are 3136 and 297984 for '{{node MatMul}} = MatMul[T=DT_FLOAT, transpose_a=false, transpose_b=false](Reshape_1, MatMul/ReadVariableOp)' with input shapes: [?,3136], [297984,1024].

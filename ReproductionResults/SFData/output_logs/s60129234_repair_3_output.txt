@@ -1,0 +1,2 @@
+2/2 - 8s - loss: 1.2076 - accuracy: 0.2500 - categorical_crossentropy: 1.2076 - 8s/epoch - 4s/step
+1/1 - 0s - loss: 1.0986 - accuracy: 0.3333 - categorical_crossentropy: 1.0986 - 413ms/epoch - 413ms/step

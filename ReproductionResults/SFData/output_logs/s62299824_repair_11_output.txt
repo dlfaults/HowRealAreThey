@@ -1,0 +1,5 @@
+Found 6 images belonging to 2 classes.
+Found 2 images belonging to 2 classes.
+
+1/1 [==============================] - ETA: 0s - loss: 0.6932 - accuracy: 0.5000
+1/1 [==============================] - 0s 366ms/step - loss: 0.6932 - accuracy: 0.5000

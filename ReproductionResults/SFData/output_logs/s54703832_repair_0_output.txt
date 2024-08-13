@@ -1,0 +1,8 @@
+ExpandDims: (ExpandDims): /job:localhost/replica:0/task:0/device:CPU:0
+ExpandDims_1: (ExpandDims): /job:localhost/replica:0/task:0/device:CPU:0
+MatMul: (MatMul): /job:localhost/replica:0/task:0/device:CPU:0
+a: (Const): /job:localhost/replica:0/task:0/device:CPU:0
+b: (Const): /job:localhost/replica:0/task:0/device:CPU:0
+ExpandDims/dim: (Const): /job:localhost/replica:0/task:0/device:CPU:0
+ExpandDims_1/dim: (Const): /job:localhost/replica:0/task:0/device:CPU:0
+[[91.]]

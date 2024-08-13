@@ -1,0 +1,2 @@
+self.X :  Tensor("Placeholder:0", shape=(None, 1), dtype=float32)
+self.Y :  Tensor("Placeholder_1:0", shape=(None, 1), dtype=float32)

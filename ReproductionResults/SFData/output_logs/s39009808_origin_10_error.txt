@@ -1,0 +1,22 @@
+/Library/Python/3.9/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+  warnings.warn(
+/Users/usi/Documents/RealBugsAnalysis/sfdata/runs/s39009808_context.py:11: UserWarning: `tf.nn.rnn_cell.GRUCell` is deprecated and will be removed in a future version. This class is equivalent as `tf.keras.layers.GRUCell`, and will be replaced by that in Tensorflow 2.0.
+  char_gru_cell_fw = tf.nn.rnn_cell.GRUCell(char_hidden_size)
+/Users/usi/Documents/RealBugsAnalysis/sfdata/runs/s39009808_context.py:13: UserWarning: `tf.nn.rnn_cell.GRUCell` is deprecated and will be removed in a future version. This class is equivalent as `tf.keras.layers.GRUCell`, and will be replaced by that in Tensorflow 2.0.
+  char_gru_cell_bw = tf.nn.rnn_cell.GRUCell(char_hidden_size)
+WARNING:tensorflow:From /Users/usi/Documents/RealBugsAnalysis/sfdata/runs/s39009808_context.py:25: bidirectional_dynamic_rnn (from tensorflow.python.ops.rnn) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `keras.layers.Bidirectional(keras.layers.RNN(cell))`, which is equivalent to this API
+WARNING:tensorflow:From /Library/Python/3.9/site-packages/tensorflow/python/ops/rnn.py:441: dynamic_rnn (from tensorflow.python.ops.rnn) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `keras.layers.RNN(cell)`, which is equivalent to this API
+Traceback (most recent call last):
+  File "/Users/usi/Documents/RealBugsAnalysis/sfdata/runs/s39009808_context.py", line 25, in <module>
+    tf.nn.bidirectional_dynamic_rnn(char_gru_cell_fw,
+  File "/Library/Python/3.9/site-packages/tensorflow/python/util/deprecation.py", line 383, in new_func
+    return func(*args, **kwargs)
+  File "/Library/Python/3.9/site-packages/tensorflow/python/util/traceback_utils.py", line 153, in error_handler
+    raise e.with_traceback(filtered_tb) from None
+  File "/Library/Python/3.9/site-packages/tensorflow/python/ops/rnn.py", line 710, in dynamic_rnn
+    raise ValueError(
+ValueError: Argument sequence_length must be a vector of length batch_size. Received sequence_length=Tensor("bidirectional_rnn/fw/fw/Cast/x:0", shape=(), dtype=int32) of shape: ()

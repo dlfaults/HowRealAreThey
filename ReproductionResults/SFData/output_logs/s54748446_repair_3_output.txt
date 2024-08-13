@@ -1,0 +1,9 @@
+<_TensorSliceDataset element_spec=TensorSpec(shape=(2,), dtype=tf.float32, name=None)>
+repeat ds  <_RepeatDataset element_spec=TensorSpec(shape=(2,), dtype=tf.float32, name=None)>
+iterator  <tensorflow.python.data.ops.iterator_ops.Iterator object at 0x174b60a60>
+shape of dataset  <_RepeatDataset element_spec=TensorSpec(shape=(2,), dtype=tf.float32, name=None)> [iterator] elt  Tensor("IteratorGetNext:0", shape=(2,), dtype=float32)
+shape of it  (2,)
+[0. 0.]
+[1. 0.]
+[0. 1.]
+[1. 1.]

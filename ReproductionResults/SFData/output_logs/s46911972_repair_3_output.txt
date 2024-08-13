@@ -1,0 +1,6 @@
+Step 1, Minibatch Loss= 359.9035, Training Accuracy= 0.538
+Step 100, Minibatch Loss= 0.6931, Training Accuracy= 0.463
+Step 200, Minibatch Loss= 0.6931, Training Accuracy= 0.463
+Step 300, Minibatch Loss= 0.6931, Training Accuracy= 0.463
+Step 400, Minibatch Loss= 0.6931, Training Accuracy= 0.463
+Step 500, Minibatch Loss= 0.6931, Training Accuracy= 0.463

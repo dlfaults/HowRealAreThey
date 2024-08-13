@@ -1,0 +1,12 @@
+/Library/Python/3.9/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+  warnings.warn(
+Traceback (most recent call last):
+  File "/Users/usi/Documents/RealBugsAnalysis/sfdata/runs/s40331510_context.py", line 12, in <module>
+    model.add(LSTM(100))
+  File "/Library/Python/3.9/site-packages/tensorflow/python/trackable/base.py", line 204, in _method_wrapper
+    result = method(self, *args, **kwargs)
+  File "/Library/Python/3.9/site-packages/keras/src/utils/traceback_utils.py", line 70, in error_handler
+    raise e.with_traceback(filtered_tb) from None
+  File "/Library/Python/3.9/site-packages/keras/src/engine/input_spec.py", line 235, in assert_input_compatibility
+    raise ValueError(
+ValueError: Input 0 of layer "lstm_1" is incompatible with the layer: expected ndim=3, found ndim=2. Full shape received: (None, 100)

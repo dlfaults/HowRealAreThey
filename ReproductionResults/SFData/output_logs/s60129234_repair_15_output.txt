@@ -1,0 +1,2 @@
+2/2 - 9s - loss: 2.2164 - accuracy: 0.3750 - categorical_crossentropy: 2.2164 - 9s/epoch - 4s/step
+1/1 - 0s - loss: 1.0676 - accuracy: 0.3333 - categorical_crossentropy: 1.0676 - 427ms/epoch - 427ms/step

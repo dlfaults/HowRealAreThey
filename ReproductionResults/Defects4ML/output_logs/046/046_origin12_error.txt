@@ -1,0 +1,6 @@
+Using TensorFlow backend.
+2024-07-03 00:10:23.867840: I tensorflow/core/platform/cpu_feature_guard.cc:143] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+2024-07-03 00:10:23.878143: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x7feb3a9acda0 initialized for platform Host (this does not guarantee that XLA will be used). Devices:
+2024-07-03 00:10:23.878190: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Host, Default Version
+/Users/author/Documents/Projects/RealFaults/bugs/046/buggy/XOR.py:21: UserWarning: The `nb_epoch` argument in `fit` has been renamed `epochs`.
+  history = model.fit(inputs, outputs, batch_size=1, nb_epoch=1000)

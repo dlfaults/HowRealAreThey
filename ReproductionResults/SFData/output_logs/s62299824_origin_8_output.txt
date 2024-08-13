@@ -1,0 +1,2 @@
+Found 6 images belonging to 2 classes.
+Found 2 images belonging to 2 classes.

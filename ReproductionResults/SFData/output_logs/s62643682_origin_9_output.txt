@@ -1,0 +1,42 @@
+Model: "VGGlike_CNN"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ input_1 (InputLayer)        [(None, 29, 29, 1)]       0         
+                                                                 
+ Conv_1 (Conv2D)             (None, 27, 27, 16)        160       
+                                                                 
+ leaky_re_lu (LeakyReLU)     (None, 27, 27, 16)        0         
+                                                                 
+ MaxPool_1 (MaxPooling2D)    (None, 13, 13, 16)        0         
+                                                                 
+ Conv_2 (Conv2D)             (None, 11, 11, 16)        2320      
+                                                                 
+ leaky_re_lu_1 (LeakyReLU)   (None, 11, 11, 16)        0         
+                                                                 
+ MaxPool_2 (MaxPooling2D)    (None, 5, 5, 16)          0         
+                                                                 
+ Conv_3 (Conv2D)             (None, 3, 3, 32)          4640      
+                                                                 
+ leaky_re_lu_2 (LeakyReLU)   (None, 3, 3, 32)          0         
+                                                                 
+ MaxPool_3 (MaxPooling2D)    (None, 1, 1, 32)          0         
+                                                                 
+ Flatten (Flatten)           (None, 32)                0         
+                                                                 
+ Dense_1 (Dense)             (None, 64)                2112      
+                                                                 
+ ReLU_dense_1 (ReLU)         (None, 64)                0         
+                                                                 
+ Dense_2 (Dense)             (None, 64)                4160      
+                                                                 
+ ReLU_dense_2 (ReLU)         (None, 64)                0         
+                                                                 
+ Output (Dense)              (None, 4)                 260       
+                                                                 
+=================================================================
+Total params: 13652 (53.33 KB)
+Trainable params: 13652 (53.33 KB)
+Non-trainable params: 0 (0.00 Byte)
+_________________________________________________________________
+X_train.shape =  (10, 29, 29, 1)

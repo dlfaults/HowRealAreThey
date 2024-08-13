@@ -1,0 +1,19 @@
+/Library/Python/3.9/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+  warnings.warn(
+WARNING:tensorflow:From /Library/Python/3.9/site-packages/tensorflow/python/util/dispatch.py:1260: softmax_cross_entropy_with_logits (from tensorflow.python.ops.nn_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+
+Future major versions of TensorFlow will allow gradients to flow
+into the labels input on backprop by default.
+
+See `tf.nn.softmax_cross_entropy_with_logits_v2`.
+
+2024-08-01 19:34:31.216406: I tensorflow/compiler/mlir/mlir_graph_optimization_pass.cc:382] MLIR V1 optimization pass is not enabled
+Traceback (most recent call last):
+  File "/Users/usi/Documents/RealBugsAnalysis/sfdata/runs/s47482082_context.py", line 28, in <module>
+    sess.run([train_step, accuracy], feed_dict={x:imgs, y_: labels})
+  File "/Library/Python/3.9/site-packages/tensorflow/python/client/session.py", line 972, in run
+    result = self._run(None, fetches, feed_dict, options_ptr,
+  File "/Library/Python/3.9/site-packages/tensorflow/python/client/session.py", line 1189, in _run
+    raise ValueError(
+ValueError: Cannot feed value of shape (100,) for Tensor Placeholder_1:0, which has shape (None, 5)

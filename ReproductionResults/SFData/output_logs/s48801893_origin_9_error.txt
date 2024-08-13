@@ -1,0 +1,32 @@
+/Library/Python/3.9/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+  warnings.warn(
+Traceback (most recent call last):
+  File "/Users/usi/Documents/RealBugsAnalysis/sfdata/runs/s48801893_context.py", line 14, in <module>
+    train_op = tf.train.GradientDescentOptimizer(1e-4).minimize(distance)
+  File "/Library/Python/3.9/site-packages/tensorflow/python/training/optimizer.py", line 473, in minimize
+    grads_and_vars = self.compute_gradients(
+  File "/Library/Python/3.9/site-packages/tensorflow/python/training/optimizer.py", line 599, in compute_gradients
+    grads = gradients.gradients(
+  File "/Library/Python/3.9/site-packages/tensorflow/python/ops/gradients_impl.py", line 172, in gradients
+    return gradients_util._GradientsHelper(
+  File "/Library/Python/3.9/site-packages/tensorflow/python/ops/gradients_util.py", line 713, in _GradientsHelper
+    in_grads = _MaybeCompile(grad_scope, op, func_call,
+  File "/Library/Python/3.9/site-packages/tensorflow/python/ops/gradients_util.py", line 349, in _MaybeCompile
+    return grad_fn()  # Exit early
+  File "/Library/Python/3.9/site-packages/tensorflow/python/ops/gradients_util.py", line 714, in <lambda>
+    lambda: grad_fn(op, *out_grads))
+  File "/Library/Python/3.9/site-packages/tensorflow/python/ops/array_grad.py", line 743, in _GatherNdGrad
+    ref_grad = array_ops.scatter_nd(indices, grad, ref_shape)
+  File "/Library/Python/3.9/site-packages/tensorflow/python/ops/gen_array_ops.py", line 9413, in scatter_nd
+    _, _, _op, _outputs = _op_def_library._apply_op_helper(
+  File "/Library/Python/3.9/site-packages/tensorflow/python/framework/op_def_library.py", line 796, in _apply_op_helper
+    op = g._create_op_internal(op_type_name, inputs, dtypes=None,
+  File "/Library/Python/3.9/site-packages/tensorflow/python/framework/ops.py", line 2657, in _create_op_internal
+    ret = Operation.from_node_def(
+  File "/Library/Python/3.9/site-packages/tensorflow/python/framework/ops.py", line 1161, in from_node_def
+    c_op = _create_c_op(g, node_def, inputs, control_input_ops, op_def=op_def)
+  File "/Library/Python/3.9/site-packages/tensorflow/python/util/traceback_utils.py", line 153, in error_handler
+    raise e.with_traceback(filtered_tb) from None
+  File "/Library/Python/3.9/site-packages/tensorflow/python/framework/ops.py", line 1021, in _create_c_op
+    raise ValueError(e.message)
+ValueError: Shape must be at least rank 1 but is rank 0 for '{{node gradients/GatherNd_grad/ScatterNd}} = ScatterNd[T=DT_FLOAT, Tindices=DT_INT32](GatherNd/indices, gradients/sub_grad/tuple/control_dependency, gradients/GatherNd_grad/Shape)' with input shapes: [2], [], [2].

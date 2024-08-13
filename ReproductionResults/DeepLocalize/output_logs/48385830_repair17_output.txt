@@ -1,0 +1,87 @@
+x_train shape: (60000, 784)
+60000 train samples
+10000 test samples
+y_train shape: (60000, 10)
+Layer 1 input shape:  (None, 784)
+Layer 1 output shape:  (None, 30)
+Layer 2 input shape:  (None, 30)
+Layer 2 output shape:  (None, 10)
+Model: "sequential"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ dense (Dense)               (None, 30)                23550     
+                                                                 
+ dense_1 (Dense)             (None, 10)                310       
+                                                                 
+=================================================================
+Total params: 23860 (93.20 KB)
+Trainable params: 23860 (93.20 KB)
+Non-trainable params: 0 (0.00 Byte)
+_________________________________________________________________
+Epoch 1/30
+6000/6000 - 2s - loss: 1.7817 - accuracy: 0.4464 - 2s/epoch - 390us/step
+Epoch 2/30
+6000/6000 - 2s - loss: 0.9289 - accuracy: 0.7068 - 2s/epoch - 363us/step
+Epoch 3/30
+6000/6000 - 2s - loss: 0.7371 - accuracy: 0.7691 - 2s/epoch - 360us/step
+Epoch 4/30
+6000/6000 - 2s - loss: 0.6430 - accuracy: 0.8000 - 2s/epoch - 364us/step
+Epoch 5/30
+6000/6000 - 2s - loss: 0.5836 - accuracy: 0.8198 - 2s/epoch - 361us/step
+Epoch 6/30
+6000/6000 - 2s - loss: 0.5415 - accuracy: 0.8348 - 2s/epoch - 360us/step
+Epoch 7/30
+6000/6000 - 2s - loss: 0.5096 - accuracy: 0.8445 - 2s/epoch - 359us/step
+Epoch 8/30
+6000/6000 - 2s - loss: 0.4841 - accuracy: 0.8528 - 2s/epoch - 361us/step
+Epoch 9/30
+6000/6000 - 2s - loss: 0.4632 - accuracy: 0.8598 - 2s/epoch - 360us/step
+Epoch 10/30
+6000/6000 - 2s - loss: 0.4458 - accuracy: 0.8648 - 2s/epoch - 359us/step
+Epoch 11/30
+6000/6000 - 2s - loss: 0.4305 - accuracy: 0.8701 - 2s/epoch - 360us/step
+Epoch 12/30
+6000/6000 - 2s - loss: 0.4176 - accuracy: 0.8752 - 2s/epoch - 361us/step
+Epoch 13/30
+6000/6000 - 2s - loss: 0.4058 - accuracy: 0.8787 - 2s/epoch - 362us/step
+Epoch 14/30
+6000/6000 - 2s - loss: 0.3954 - accuracy: 0.8823 - 2s/epoch - 359us/step
+Epoch 15/30
+6000/6000 - 2s - loss: 0.3860 - accuracy: 0.8853 - 2s/epoch - 380us/step
+Epoch 16/30
+6000/6000 - 2s - loss: 0.3772 - accuracy: 0.8875 - 2s/epoch - 360us/step
+Epoch 17/30
+6000/6000 - 2s - loss: 0.3693 - accuracy: 0.8908 - 2s/epoch - 365us/step
+Epoch 18/30
+6000/6000 - 2s - loss: 0.3619 - accuracy: 0.8924 - 2s/epoch - 359us/step
+Epoch 19/30
+6000/6000 - 2s - loss: 0.3550 - accuracy: 0.8949 - 2s/epoch - 359us/step
+Epoch 20/30
+6000/6000 - 2s - loss: 0.3485 - accuracy: 0.8969 - 2s/epoch - 358us/step
+Epoch 21/30
+6000/6000 - 2s - loss: 0.3425 - accuracy: 0.8985 - 2s/epoch - 358us/step
+Epoch 22/30
+6000/6000 - 2s - loss: 0.3367 - accuracy: 0.9009 - 2s/epoch - 361us/step
+Epoch 23/30
+6000/6000 - 2s - loss: 0.3314 - accuracy: 0.9024 - 2s/epoch - 358us/step
+Epoch 24/30
+6000/6000 - 2s - loss: 0.3262 - accuracy: 0.9038 - 2s/epoch - 359us/step
+Epoch 25/30
+6000/6000 - 2s - loss: 0.3214 - accuracy: 0.9054 - 2s/epoch - 362us/step
+Epoch 26/30
+6000/6000 - 2s - loss: 0.3166 - accuracy: 0.9063 - 2s/epoch - 360us/step
+Epoch 27/30
+6000/6000 - 2s - loss: 0.3123 - accuracy: 0.9078 - 2s/epoch - 360us/step
+Epoch 28/30
+6000/6000 - 2s - loss: 0.3081 - accuracy: 0.9095 - 2s/epoch - 360us/step
+Epoch 29/30
+6000/6000 - 2s - loss: 0.3041 - accuracy: 0.9108 - 2s/epoch - 360us/step
+Epoch 30/30
+6000/6000 - 2s - loss: 0.3001 - accuracy: 0.9117 - 2s/epoch - 359us/step
+
+  1/313 [..............................] - ETA: 26s - loss: 0.2443 - accuracy: 0.8750
+108/313 [=========>....................] - ETA: 0s - loss: 0.3847 - accuracy: 0.8793 
+225/313 [====================>.........] - ETA: 0s - loss: 0.3453 - accuracy: 0.8957
+313/313 [==============================] - 0s 440us/step - loss: 0.3096 - accuracy: 0.9062
+Info:{"accuracy": "0.91", "loss": "0.309604", "train_size": "60000", "test_size": "10000"}

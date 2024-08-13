@@ -1,0 +1,12 @@
+/Library/Python/3.9/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+  warnings.warn(
+Traceback (most recent call last):
+  File "/Users/usi/Documents/RealBugsAnalysis/sfdata/runs/s38656566_context.py", line 12, in <module>
+    conv.add(Convolution1D(64, 10, input_shape=(1, 101)))
+  File "/Library/Python/3.9/site-packages/tensorflow/python/trackable/base.py", line 204, in _method_wrapper
+    result = method(self, *args, **kwargs)
+  File "/Library/Python/3.9/site-packages/keras/src/utils/traceback_utils.py", line 70, in error_handler
+    raise e.with_traceback(filtered_tb) from None
+  File "/Library/Python/3.9/site-packages/keras/src/layers/convolutional/base_conv.py", line 354, in compute_output_shape
+    raise ValueError(
+ValueError: One of the dimensions in the output is <= 0 due to downsampling in conv1d. Consider increasing the input size. Received input shape [None, 1, 101] which would produce output shape with a zero or negative value in a dimension.

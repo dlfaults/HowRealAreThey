@@ -1,0 +1,13 @@
+def layers
+def leraning model
+init layer value
+train num 1
+train num 2
+train num 3
+train num 4
+train num 5
+train num 6
+train num 7
+train num 8
+train num 9
+train num 10

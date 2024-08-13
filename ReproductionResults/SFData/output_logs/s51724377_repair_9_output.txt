@@ -1,0 +1,4 @@
+Epoch:   0    Train Cost: 0.7119
+Epoch:   0    Train Cost: 0.6961
+Train accuracy: 58.00%
+Test accuracy:  48.00%

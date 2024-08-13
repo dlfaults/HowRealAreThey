@@ -1,0 +1,15 @@
+/Library/Python/3.9/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+  warnings.warn(
+Traceback (most recent call last):
+  File "/Users/usi/Documents/RealBugsAnalysis/sfdata/runs/s44472693_context.py", line 20, in <module>
+    decoder = Model(encoded_input, decoder_layer(encoded_input))  # Crash happens here.
+  File "/Library/Python/3.9/site-packages/keras/src/utils/traceback_utils.py", line 70, in error_handler
+    raise e.with_traceback(filtered_tb) from None
+  File "/Library/Python/3.9/site-packages/tensorflow/python/framework/ops.py", line 1021, in _create_c_op
+    raise ValueError(e.message)
+ValueError: Exception encountered when calling layer "dense_5" (type Dense).
+
+Dimensions must be equal, but are 32 and 128 for '{{node dense_5/MatMul}} = MatMul[T=DT_FLOAT, transpose_a=false, transpose_b=false](Placeholder, dense_5/MatMul/ReadVariableOp)' with input shapes: [?,32], [128,784].
+
+Call arguments received by layer "dense_5" (type Dense):
+  • inputs=tf.Tensor(shape=(None, 32), dtype=float32)

@@ -1,0 +1,8 @@
+Using TensorFlow backend.
+D:\author\RealFaults\bugs\081\fixed\script.py:59: UserWarning: Update your `Conv2D` call to the Keras 2 API: `Conv2D(32, (3, 3), input_shape=(28, 28, 1..., padding="valid")`
+  input_shape=(img_cols, img_rows, 1)))
+2024-07-10 21:56:10.137395: I tensorflow/core/platform/cpu_feature_guard.cc:142] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2
+D:\author\RealFaults\bugs\081\fixed\script.py:61: UserWarning: Update your `Conv2D` call to the Keras 2 API: `Conv2D(32, (3, 3))`
+  model.add(Convolution2D(nb_filters, nb_conv, nb_conv))
+D:\author\RealFaults\bugs\081\fixed\script.py:78: UserWarning: The `nb_epoch` argument in `fit` has been renamed `epochs`.
+  verbose=1, validation_data=(X_test, Y_test))

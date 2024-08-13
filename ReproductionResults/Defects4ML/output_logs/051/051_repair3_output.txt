@@ -1,0 +1,196 @@
+(42000, 28, 28, 1) (42000, 10)
+Model: "sequential_1"
+_________________________________________________________________
+Layer (type)                 Output Shape              Param #   
+=================================================================
+conv2d_1 (Conv2D)            (None, 26, 26, 128)       1280      
+_________________________________________________________________
+max_pooling2d_1 (MaxPooling2 (None, 13, 13, 128)       0         
+_________________________________________________________________
+conv2d_2 (Conv2D)            (None, 11, 11, 64)        73792     
+_________________________________________________________________
+max_pooling2d_2 (MaxPooling2 (None, 5, 5, 64)          0         
+_________________________________________________________________
+conv2d_3 (Conv2D)            (None, 3, 3, 32)          18464     
+_________________________________________________________________
+max_pooling2d_3 (MaxPooling2 (None, 1, 1, 32)          0         
+_________________________________________________________________
+flatten_1 (Flatten)          (None, 32)                0         
+_________________________________________________________________
+dense_1 (Dense)              (None, 256)               8448      
+_________________________________________________________________
+dense_2 (Dense)              (None, 128)               32896     
+_________________________________________________________________
+dropout_1 (Dropout)          (None, 128)               0         
+_________________________________________________________________
+dense_3 (Dense)              (None, 10)                1290      
+=================================================================
+Total params: 136,170
+Trainable params: 136,170
+Non-trainable params: 0
+_________________________________________________________________
+Train on 33600 samples, validate on 8400 samples
+Epoch 1/40
+ - 24s - loss: 0.6924 - accuracy: 0.7803 - categorical_accuracy: 0.7803 - val_loss: 0.2067 - val_accuracy: 0.9377 - val_categorical_accuracy: 0.9377
+Epoch 2/40
+ - 24s - loss: 0.2222 - accuracy: 0.9385 - categorical_accuracy: 0.9385 - val_loss: 0.1484 - val_accuracy: 0.9587 - val_categorical_accuracy: 0.9587
+Epoch 3/40
+ - 24s - loss: 0.1596 - accuracy: 0.9577 - categorical_accuracy: 0.9577 - val_loss: 0.1112 - val_accuracy: 0.9699 - val_categorical_accuracy: 0.9699
+Epoch 4/40
+ - 25s - loss: 0.1284 - accuracy: 0.9660 - categorical_accuracy: 0.9660 - val_loss: 0.1160 - val_accuracy: 0.9683 - val_categorical_accuracy: 0.9683
+Epoch 5/40
+ - 24s - loss: 0.1084 - accuracy: 0.9701 - categorical_accuracy: 0.9701 - val_loss: 0.1254 - val_accuracy: 0.9674 - val_categorical_accuracy: 0.9674
+Epoch 6/40
+ - 24s - loss: 0.0992 - accuracy: 0.9733 - categorical_accuracy: 0.9733 - val_loss: 0.1177 - val_accuracy: 0.9732 - val_categorical_accuracy: 0.9732
+Epoch 7/40
+ - 24s - loss: 0.0881 - accuracy: 0.9769 - categorical_accuracy: 0.9769 - val_loss: 0.0987 - val_accuracy: 0.9779 - val_categorical_accuracy: 0.9779
+Epoch 8/40
+ - 24s - loss: 0.0784 - accuracy: 0.9790 - categorical_accuracy: 0.9790 - val_loss: 0.0851 - val_accuracy: 0.9804 - val_categorical_accuracy: 0.9804
+Epoch 9/40
+ - 25s - loss: 0.0692 - accuracy: 0.9810 - categorical_accuracy: 0.9810 - val_loss: 0.1153 - val_accuracy: 0.9769 - val_categorical_accuracy: 0.9769
+Epoch 10/40
+ - 24s - loss: 0.0630 - accuracy: 0.9827 - categorical_accuracy: 0.9827 - val_loss: 0.1113 - val_accuracy: 0.9727 - val_categorical_accuracy: 0.9727
+Epoch 11/40
+ - 24s - loss: 0.0633 - accuracy: 0.9829 - categorical_accuracy: 0.9829 - val_loss: 0.1177 - val_accuracy: 0.9742 - val_categorical_accuracy: 0.9742
+Epoch 12/40
+ - 24s - loss: 0.0582 - accuracy: 0.9841 - categorical_accuracy: 0.9841 - val_loss: 0.1081 - val_accuracy: 0.9810 - val_categorical_accuracy: 0.9810
+Epoch 13/40
+ - 24s - loss: 0.0536 - accuracy: 0.9855 - categorical_accuracy: 0.9855 - val_loss: 0.1124 - val_accuracy: 0.9802 - val_categorical_accuracy: 0.9802
+Epoch 14/40
+ - 24s - loss: 0.0475 - accuracy: 0.9871 - categorical_accuracy: 0.9871 - val_loss: 0.1086 - val_accuracy: 0.9800 - val_categorical_accuracy: 0.9800
+Epoch 15/40
+ - 24s - loss: 0.0465 - accuracy: 0.9870 - categorical_accuracy: 0.9870 - val_loss: 0.1132 - val_accuracy: 0.9811 - val_categorical_accuracy: 0.9811
+Epoch 16/40
+ - 24s - loss: 0.0428 - accuracy: 0.9889 - categorical_accuracy: 0.9889 - val_loss: 0.1059 - val_accuracy: 0.9835 - val_categorical_accuracy: 0.9835
+Epoch 17/40
+ - 24s - loss: 0.0483 - accuracy: 0.9879 - categorical_accuracy: 0.9879 - val_loss: 0.1524 - val_accuracy: 0.9786 - val_categorical_accuracy: 0.9786
+Epoch 18/40
+ - 24s - loss: 0.0406 - accuracy: 0.9894 - categorical_accuracy: 0.9894 - val_loss: 0.1650 - val_accuracy: 0.9774 - val_categorical_accuracy: 0.9774
+Epoch 19/40
+ - 24s - loss: 0.0409 - accuracy: 0.9891 - categorical_accuracy: 0.9891 - val_loss: 0.1574 - val_accuracy: 0.9781 - val_categorical_accuracy: 0.9781
+Epoch 20/40
+ - 24s - loss: 0.0386 - accuracy: 0.9900 - categorical_accuracy: 0.9900 - val_loss: 0.1388 - val_accuracy: 0.9818 - val_categorical_accuracy: 0.9818
+Epoch 21/40
+ - 24s - loss: 0.0412 - accuracy: 0.9899 - categorical_accuracy: 0.9899 - val_loss: 0.1902 - val_accuracy: 0.9774 - val_categorical_accuracy: 0.9774
+Epoch 22/40
+ - 24s - loss: 0.0434 - accuracy: 0.9893 - categorical_accuracy: 0.9893 - val_loss: 0.1510 - val_accuracy: 0.9801 - val_categorical_accuracy: 0.9801
+Epoch 23/40
+ - 24s - loss: 0.0287 - accuracy: 0.9929 - categorical_accuracy: 0.9929 - val_loss: 0.1947 - val_accuracy: 0.9735 - val_categorical_accuracy: 0.9735
+Epoch 24/40
+ - 24s - loss: 0.0338 - accuracy: 0.9916 - categorical_accuracy: 0.9916 - val_loss: 0.1639 - val_accuracy: 0.9814 - val_categorical_accuracy: 0.9814
+Epoch 25/40
+ - 24s - loss: 0.0369 - accuracy: 0.9915 - categorical_accuracy: 0.9915 - val_loss: 0.2025 - val_accuracy: 0.9729 - val_categorical_accuracy: 0.9729
+Epoch 26/40
+ - 24s - loss: 0.0341 - accuracy: 0.9921 - categorical_accuracy: 0.9921 - val_loss: 0.1629 - val_accuracy: 0.9802 - val_categorical_accuracy: 0.9802
+Epoch 27/40
+ - 24s - loss: 0.0399 - accuracy: 0.9899 - categorical_accuracy: 0.9899 - val_loss: 0.1679 - val_accuracy: 0.9814 - val_categorical_accuracy: 0.9814
+Epoch 28/40
+ - 24s - loss: 0.0324 - accuracy: 0.9919 - categorical_accuracy: 0.9919 - val_loss: 0.1980 - val_accuracy: 0.9749 - val_categorical_accuracy: 0.9749
+Epoch 29/40
+ - 24s - loss: 0.0194 - accuracy: 0.9951 - categorical_accuracy: 0.9951 - val_loss: 0.2256 - val_accuracy: 0.9779 - val_categorical_accuracy: 0.9779
+Epoch 30/40
+ - 24s - loss: 0.0374 - accuracy: 0.9920 - categorical_accuracy: 0.9920 - val_loss: 0.2074 - val_accuracy: 0.9793 - val_categorical_accuracy: 0.9793
+Epoch 31/40
+ - 24s - loss: 0.0327 - accuracy: 0.9921 - categorical_accuracy: 0.9921 - val_loss: 0.2567 - val_accuracy: 0.9751 - val_categorical_accuracy: 0.9751
+Epoch 32/40
+ - 24s - loss: 0.0360 - accuracy: 0.9926 - categorical_accuracy: 0.9926 - val_loss: 0.2527 - val_accuracy: 0.9730 - val_categorical_accuracy: 0.9730
+Epoch 33/40
+ - 24s - loss: 0.0228 - accuracy: 0.9941 - categorical_accuracy: 0.9941 - val_loss: 0.2250 - val_accuracy: 0.9811 - val_categorical_accuracy: 0.9811
+Epoch 34/40
+ - 24s - loss: 0.0384 - accuracy: 0.9922 - categorical_accuracy: 0.9922 - val_loss: 0.2930 - val_accuracy: 0.9793 - val_categorical_accuracy: 0.9793
+Epoch 35/40
+ - 24s - loss: 0.0305 - accuracy: 0.9933 - categorical_accuracy: 0.9933 - val_loss: 0.2210 - val_accuracy: 0.9785 - val_categorical_accuracy: 0.9785
+Epoch 36/40
+ - 24s - loss: 0.0327 - accuracy: 0.9926 - categorical_accuracy: 0.9926 - val_loss: 0.1613 - val_accuracy: 0.9810 - val_categorical_accuracy: 0.9810
+Epoch 37/40
+ - 24s - loss: 0.0213 - accuracy: 0.9945 - categorical_accuracy: 0.9945 - val_loss: 0.2431 - val_accuracy: 0.9823 - val_categorical_accuracy: 0.9823
+Epoch 38/40
+ - 24s - loss: 0.0367 - accuracy: 0.9928 - categorical_accuracy: 0.9928 - val_loss: 0.2071 - val_accuracy: 0.9782 - val_categorical_accuracy: 0.9782
+Epoch 39/40
+ - 25s - loss: 0.0298 - accuracy: 0.9938 - categorical_accuracy: 0.9938 - val_loss: 0.2251 - val_accuracy: 0.9780 - val_categorical_accuracy: 0.9780
+Epoch 40/40
+ - 24s - loss: 0.0352 - accuracy: 0.9918 - categorical_accuracy: 0.9918 - val_loss: 0.2336 - val_accuracy: 0.9812 - val_categorical_accuracy: 0.9812
+
+   32/28000 [..............................] - ETA: 4s
+  384/28000 [..............................] - ETA: 4s
+  736/28000 [..............................] - ETA: 4s
+ 1088/28000 [>.............................] - ETA: 4s
+ 1440/28000 [>.............................] - ETA: 4s
+ 1792/28000 [>.............................] - ETA: 3s
+ 2144/28000 [=>............................] - ETA: 3s
+ 2496/28000 [=>............................] - ETA: 3s
+ 2848/28000 [==>...........................] - ETA: 3s
+ 3200/28000 [==>...........................] - ETA: 3s
+ 3552/28000 [==>...........................] - ETA: 3s
+ 3904/28000 [===>..........................] - ETA: 3s
+ 4256/28000 [===>..........................] - ETA: 3s
+ 4608/28000 [===>..........................] - ETA: 3s
+ 4960/28000 [====>.........................] - ETA: 3s
+ 5312/28000 [====>.........................] - ETA: 3s
+ 5664/28000 [=====>........................] - ETA: 3s
+ 5984/28000 [=====>........................] - ETA: 3s
+ 6336/28000 [=====>........................] - ETA: 3s
+ 6688/28000 [======>.......................] - ETA: 3s
+ 7008/28000 [======>.......................] - ETA: 3s
+ 7360/28000 [======>.......................] - ETA: 3s
+ 7712/28000 [=======>......................] - ETA: 3s
+ 8064/28000 [=======>......................] - ETA: 3s
+ 8416/28000 [========>.....................] - ETA: 2s
+ 8768/28000 [========>.....................] - ETA: 2s
+ 9120/28000 [========>.....................] - ETA: 2s
+ 9472/28000 [=========>....................] - ETA: 2s
+ 9824/28000 [=========>....................] - ETA: 2s
+10176/28000 [=========>....................] - ETA: 2s
+10528/28000 [==========>...................] - ETA: 2s
+10880/28000 [==========>...................] - ETA: 2s
+11232/28000 [===========>..................] - ETA: 2s
+11584/28000 [===========>..................] - ETA: 2s
+11936/28000 [===========>..................] - ETA: 2s
+12288/28000 [============>.................] - ETA: 2s
+12640/28000 [============>.................] - ETA: 2s
+12992/28000 [============>.................] - ETA: 2s
+13344/28000 [=============>................] - ETA: 2s
+13696/28000 [=============>................] - ETA: 2s
+14048/28000 [==============>...............] - ETA: 2s
+14400/28000 [==============>...............] - ETA: 2s
+14752/28000 [==============>...............] - ETA: 2s
+15104/28000 [===============>..............] - ETA: 1s
+15456/28000 [===============>..............] - ETA: 1s
+15808/28000 [===============>..............] - ETA: 1s
+16160/28000 [================>.............] - ETA: 1s
+16512/28000 [================>.............] - ETA: 1s
+16864/28000 [=================>............] - ETA: 1s
+17216/28000 [=================>............] - ETA: 1s
+17568/28000 [=================>............] - ETA: 1s
+17920/28000 [==================>...........] - ETA: 1s
+18272/28000 [==================>...........] - ETA: 1s
+18624/28000 [==================>...........] - ETA: 1s
+18976/28000 [===================>..........] - ETA: 1s
+19296/28000 [===================>..........] - ETA: 1s
+19648/28000 [====================>.........] - ETA: 1s
+20000/28000 [====================>.........] - ETA: 1s
+20352/28000 [====================>.........] - ETA: 1s
+20704/28000 [=====================>........] - ETA: 1s
+21056/28000 [=====================>........] - ETA: 1s
+21408/28000 [=====================>........] - ETA: 1s
+21760/28000 [======================>.......] - ETA: 0s
+22112/28000 [======================>.......] - ETA: 0s
+22464/28000 [=======================>......] - ETA: 0s
+22816/28000 [=======================>......] - ETA: 0s
+23168/28000 [=======================>......] - ETA: 0s
+23520/28000 [========================>.....] - ETA: 0s
+23872/28000 [========================>.....] - ETA: 0s
+24224/28000 [========================>.....] - ETA: 0s
+24576/28000 [=========================>....] - ETA: 0s
+24928/28000 [=========================>....] - ETA: 0s
+25280/28000 [==========================>...] - ETA: 0s
+25600/28000 [==========================>...] - ETA: 0s
+25952/28000 [==========================>...] - ETA: 0s
+26304/28000 [===========================>..] - ETA: 0s
+26656/28000 [===========================>..] - ETA: 0s
+27008/28000 [===========================>..] - ETA: 0s
+27360/28000 [============================>.] - ETA: 0s
+27712/28000 [============================>.] - ETA: 0s
+28000/28000 [==============================] - 4s 152us/step
+[0.013141852269412562, 0.9965357184410095, 0.9965357184410095]
+Info:{"accuracy": "1.00", "loss": "0.013142", "train_size": "42000", "test_size": "42000"}

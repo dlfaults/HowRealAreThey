@@ -1,0 +1,4 @@
+Epoch 1/2
+204/204 - 1s - loss: 1.8007 - accuracy: 0.1743 - 1s/epoch - 7ms/step
+Epoch 2/2
+204/204 - 1s - loss: 1.7912 - accuracy: 0.1697 - 742ms/epoch - 4ms/step

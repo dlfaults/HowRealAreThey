@@ -1,0 +1,81 @@
+D:\author\RealFaults\RFenv\lib\site-packages\tensorflow\python\framework\dtypes.py:519: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint8 = np.dtype([("qint8", np.int8, 1)])
+D:\author\RealFaults\RFenv\lib\site-packages\tensorflow\python\framework\dtypes.py:520: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_quint8 = np.dtype([("quint8", np.uint8, 1)])
+D:\author\RealFaults\RFenv\lib\site-packages\tensorflow\python\framework\dtypes.py:521: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint16 = np.dtype([("qint16", np.int16, 1)])
+D:\author\RealFaults\RFenv\lib\site-packages\tensorflow\python\framework\dtypes.py:522: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_quint16 = np.dtype([("quint16", np.uint16, 1)])
+D:\author\RealFaults\RFenv\lib\site-packages\tensorflow\python\framework\dtypes.py:523: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint32 = np.dtype([("qint32", np.int32, 1)])
+D:\author\RealFaults\RFenv\lib\site-packages\tensorflow\python\framework\dtypes.py:528: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  np_resource = np.dtype([("resource", np.ubyte, 1)])
+WARNING:tensorflow:From D:\author\RealFaults\bugs\006\buggy\autoencoder\VariationalAutoencoderRunner.py:24: read_data_sets (from tensorflow.contrib.learn.python.learn.datasets.mnist) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use alternatives such as official/mnist/dataset.py from tensorflow/models.
+WARNING:tensorflow:From D:\author\RealFaults\RFenv\lib\site-packages\tensorflow\contrib\learn\python\learn\datasets\mnist.py:260: maybe_download (from tensorflow.contrib.learn.python.learn.datasets.base) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please write your own downloading logic.
+WARNING:tensorflow:From D:\author\RealFaults\RFenv\lib\site-packages\tensorflow\contrib\learn\python\learn\datasets\mnist.py:262: extract_images (from tensorflow.contrib.learn.python.learn.datasets.mnist) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use tf.data to implement this functionality.
+WARNING:tensorflow:From D:\author\RealFaults\RFenv\lib\site-packages\tensorflow\contrib\learn\python\learn\datasets\mnist.py:267: extract_labels (from tensorflow.contrib.learn.python.learn.datasets.mnist) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use tf.data to implement this functionality.
+WARNING:tensorflow:From D:\author\RealFaults\RFenv\lib\site-packages\tensorflow\contrib\learn\python\learn\datasets\mnist.py:110: dense_to_one_hot (from tensorflow.contrib.learn.python.learn.datasets.mnist) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use tf.one_hot on tensors.
+WARNING:tensorflow:From D:\author\RealFaults\RFenv\lib\site-packages\tensorflow\contrib\learn\python\learn\datasets\mnist.py:290: DataSet.__init__ (from tensorflow.contrib.learn.python.learn.datasets.mnist) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use alternatives such as official/mnist/dataset.py from tensorflow/models.
+WARNING:tensorflow:From D:\author\RealFaults\RFenv\lib\site-packages\tensorflow\python\util\tf_should_use.py:118: initialize_all_variables (from tensorflow.python.ops.variables) is deprecated and will be removed after 2017-03-02.
+Instructions for updating:
+Use `tf.global_variables_initializer` instead.
+2024-07-06 06:31:03.133215: I T:\src\github\tensorflow\tensorflow\core\platform\cpu_feature_guard.cc:140] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2
+Traceback (most recent call last):
+  File "D:\author\RealFaults\RFenv\lib\site-packages\tensorflow\python\client\session.py", line 1322, in _do_call
+    return fn(*args)
+  File "D:\author\RealFaults\RFenv\lib\site-packages\tensorflow\python\client\session.py", line 1307, in _run_fn
+    options, feed_dict, fetch_list, target_list, run_metadata)
+  File "D:\author\RealFaults\RFenv\lib\site-packages\tensorflow\python\client\session.py", line 1409, in _call_tf_sessionrun
+    run_metadata)
+tensorflow.python.framework.errors_impl.InvalidArgumentError: Incompatible shapes: [10000,200] vs. [128,200]
+	 [[Node: Mul = Mul[T=DT_FLOAT, _device="/job:localhost/replica:0/task:0/device:CPU:0"](Sqrt, random_normal)]]
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\author\RealFaults\bugs\006\buggy\autoencoder\VariationalAutoencoderRunner.py", line 68, in <module>
+    total_cost = autoencoder.calc_total_cost(X_test)
+  File "D:\author\RealFaults\bugs\006\buggy\autoencoder\autoencoder_models\VariationalAutoencoder.py", line 57, in calc_total_cost
+    return self.sess.run(self.cost, feed_dict = {self.x: X})
+  File "D:\author\RealFaults\RFenv\lib\site-packages\tensorflow\python\client\session.py", line 900, in run
+    run_metadata_ptr)
+  File "D:\author\RealFaults\RFenv\lib\site-packages\tensorflow\python\client\session.py", line 1135, in _run
+    feed_dict_tensor, options, run_metadata)
+  File "D:\author\RealFaults\RFenv\lib\site-packages\tensorflow\python\client\session.py", line 1316, in _do_run
+    run_metadata)
+  File "D:\author\RealFaults\RFenv\lib\site-packages\tensorflow\python\client\session.py", line 1335, in _do_call
+    raise type(e)(node_def, op, message)
+tensorflow.python.framework.errors_impl.InvalidArgumentError: Incompatible shapes: [10000,200] vs. [128,200]
+	 [[Node: Mul = Mul[T=DT_FLOAT, _device="/job:localhost/replica:0/task:0/device:CPU:0"](Sqrt, random_normal)]]
+
+Caused by op 'Mul', defined at:
+  File "D:\author\RealFaults\bugs\006\buggy\autoencoder\VariationalAutoencoderRunner.py", line 49, in <module>
+    gaussian_sample_size = 128)
+  File "D:\author\RealFaults\bugs\006\buggy\autoencoder\autoencoder_models\VariationalAutoencoder.py", line 24, in __init__
+    self.z = tf.add(self.z_mean, tf.multiply(tf.sqrt(tf.exp(self.z_log_sigma_sq)), eps))
+  File "D:\author\RealFaults\RFenv\lib\site-packages\tensorflow\python\ops\math_ops.py", line 337, in multiply
+    return gen_math_ops.mul(x, y, name)
+  File "D:\author\RealFaults\RFenv\lib\site-packages\tensorflow\python\ops\gen_math_ops.py", line 5066, in mul
+    "Mul", x=x, y=y, name=name)
+  File "D:\author\RealFaults\RFenv\lib\site-packages\tensorflow\python\framework\op_def_library.py", line 787, in _apply_op_helper
+    op_def=op_def)
+  File "D:\author\RealFaults\RFenv\lib\site-packages\tensorflow\python\framework\ops.py", line 3392, in create_op
+    op_def=op_def)
+  File "D:\author\RealFaults\RFenv\lib\site-packages\tensorflow\python\framework\ops.py", line 1718, in __init__
+    self._traceback = self._graph._extract_stack()  # pylint: disable=protected-access
+
+InvalidArgumentError (see above for traceback): Incompatible shapes: [10000,200] vs. [128,200]
+	 [[Node: Mul = Mul[T=DT_FLOAT, _device="/job:localhost/replica:0/task:0/device:CPU:0"](Sqrt, random_normal)]]
+

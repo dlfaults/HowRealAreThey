@@ -1,0 +1,33 @@
+/Library/Python/3.9/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+  warnings.warn(
+Traceback (most recent call last):
+  File "/Users/usi/Documents/RealBugsAnalysis/sfdata/runs/s46858890_context.py", line 12, in <module>
+    model.fit(x, y, epochs=1, validation_data=(x_val, y_val))
+  File "/Library/Python/3.9/site-packages/keras/src/utils/traceback_utils.py", line 70, in error_handler
+    raise e.with_traceback(filtered_tb) from None
+  File "/var/folders/gm/btz4l43x3lgg1g9w4c6f4mtc0000gr/T/__autograph_generated_filexnboj5ch.py", line 15, in tf__train_function
+    retval_ = ag__.converted_call(ag__.ld(step_function), (ag__.ld(self), ag__.ld(iterator)), None, fscope)
+ValueError: in user code:
+
+    File "/Library/Python/3.9/site-packages/keras/src/engine/training.py", line 1377, in train_function  *
+        return step_function(self, iterator)
+    File "/Library/Python/3.9/site-packages/keras/src/engine/training.py", line 1360, in step_function  **
+        outputs = model.distribute_strategy.run(run_step, args=(data,))
+    File "/Library/Python/3.9/site-packages/keras/src/engine/training.py", line 1349, in run_step  **
+        outputs = model.train_step(data)
+    File "/Library/Python/3.9/site-packages/keras/src/engine/training.py", line 1126, in train_step
+        y_pred = self(x, training=True)
+    File "/Library/Python/3.9/site-packages/keras/src/utils/traceback_utils.py", line 70, in error_handler
+        raise e.with_traceback(filtered_tb) from None
+    File "/Library/Python/3.9/site-packages/keras/src/engine/input_spec.py", line 280, in assert_input_compatibility
+        raise ValueError(
+
+    ValueError: Exception encountered when calling layer 'sequential' (type Sequential).
+    
+    Input 0 of layer "dense" is incompatible with the layer: expected axis -1 of input shape to have value 5, but received input with shape (None, 1)
+    
+    Call arguments received by layer 'sequential' (type Sequential):
+      • inputs=tf.Tensor(shape=(None, 1), dtype=int64)
+      • training=True
+      • mask=None
+

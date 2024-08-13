@@ -1,0 +1,22 @@
+/Library/Python/3.9/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+  warnings.warn(
+WARNING:tensorflow:From /Library/Python/3.9/site-packages/tensorflow/python/util/dispatch.py:1260: calling dropout (from tensorflow.python.ops.nn_ops) with keep_prob is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `rate` instead of `keep_prob`. Rate should be set to `rate = 1 - keep_prob`.
+WARNING:tensorflow:From /Library/Python/3.9/site-packages/tensorflow/python/util/dispatch.py:1260: softmax_cross_entropy_with_logits (from tensorflow.python.ops.nn_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+
+Future major versions of TensorFlow will allow gradients to flow
+into the labels input on backprop by default.
+
+See `tf.nn.softmax_cross_entropy_with_logits_v2`.
+
+2024-08-01 18:33:11.519945: I tensorflow/compiler/mlir/mlir_graph_optimization_pass.cc:382] MLIR V1 optimization pass is not enabled
+Traceback (most recent call last):
+  File "/Users/usi/Documents/RealBugsAnalysis/sfdata/runs/s51724377_context.py", line 55, in <module>
+    _, c = sess.run([optimizer, loss], feed_dict={lr:learning_rate,
+  File "/Library/Python/3.9/site-packages/tensorflow/python/client/session.py", line 972, in run
+    result = self._run(None, fetches, feed_dict, options_ptr,
+  File "/Library/Python/3.9/site-packages/tensorflow/python/client/session.py", line 1189, in _run
+    raise ValueError(
+ValueError: Cannot feed value of shape (1, 1, 2) for Tensor labels:0, which has shape (None, 2)
