@@ -16,15 +16,15 @@ The sheet "FinalList" contains the list of 10 papers from the initial analysis a
 
 ## Manual Fault Analysis
 
-The results for our manual fault analysis are presented in folder "ManualFaultAnalysis". The file "FaultAnalysis.xlsx" contain 6 sheets: one for the pilot study and one for each analysed dataset. In the sheet "Pilot_Combined" we report the labelling by each of the two labellers. The cases of conflict and the final agreed outcome are indicated with a green background. 
+The results for our manual fault analysis are presented in folder "**ManualFaultAnalysis**". The file "**FaultAnalysis.xlsx**" contain 6 sheets: one for the pilot study and one for each analysed dataset. In the sheet "Pilot_Combined" we report the labelling by each of the two labellers. The cases of conflict and the final agreed outcome are indicated with a green background. 
 
 ## Bug Reproduction
 
-We share the results obtained as part of our experiments to reproduce the bugs in folder "ReproductionResults". In subdirectory for each dataset we have two folders: output\_logs and output\_csvs. In the folder "output\_logs" we provide the log files of running the buggy and fixed versions for each of 20 runs. More specifically, for each fault and run we provide 4 files: the error output and standard output of both the buggy and fixed files. In the folder "output\_csvs" we have two csv files for each bug: one contains the run number, performance metric (such as accuracy) value, loss value, the training data size and execution for each run of the buggy version and the other contains the same information for the fixed version. 
+We share the results obtained as part of our experiments to reproduce the bugs in folder "**ReproductionResults**". In subdirectory for each dataset we have two folders: **output\_logs** and **output\_csvs**. In the folder "output\_logs" we provide the log files of running the buggy and fixed versions for each of 20 runs. More specifically, for each fault and run we provide 4 files: the error output and standard output of both the buggy and fixed files. In the folder "output\_csvs" we have two csv files for each bug: one contains the run number, performance metric (such as accuracy) value, loss value, the training data size and execution for each run of the buggy version and the other contains the same information for the fixed version. 
 
 ## BenchDL4Real
 
-We present the set of reproducible real faults we have obtained as part of our study in the folder "BenchDL4Real". This folder has subdirectories for each dataset from which we kept faults. Each fault has the buggy and fixed source code provided, along with all the necessary files to execute them.
+We present the set of reproducible real faults we have obtained as part of our study in the folder "**BenchDL4Real**". This folder has subdirectories for each dataset from which we kept faults. Each fault has the buggy and fixed source code provided, along with all the necessary files to execute them.
 
 
 
