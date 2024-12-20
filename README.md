@@ -1,4 +1,4 @@
-# **Replication package for the ICSE 2025 submission: "Real Faults in Deep Learning Fault Benchmarks: How Real Are They?"**
+# **Replication package for the submission: "Real Faults in Deep Learning Fault Benchmarks: How Real Are They?"**
 
 ## Systematic Literature Analysis
 
